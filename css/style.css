@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,600;1,500;1,600&family=Lato:ital,wght@0,400;1,100;1,300&family=Montserrat:ital,wght@0,300;0,400;1,200;1,300&family=Roboto:ital,wght@0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200&family=Ubuntu+Mono:ital,wght@1,400;1,700&family=Ubuntu:ital,wght@0,700;1,700&display=swap');
+
+:root{
+        --karla: 'Karla', sans-serif;
+        --lato: 'Lato', sans-serif;
+        --monster: 'Montserrat', sans-serif;
+        --roboto: 'Roboto', sans-serif;
+        --sanspro: 'Source Sans Pro', sans-serif;
+        --ubuntu: 'Ubuntu', sans-serif;
+        --mono: 'Ubuntu Mono', monospace;
+}
+
+    .container{
+        max-width: 90%;
+        margin: 0 auto;
+     }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.4;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.header{
+    width: 100%;
+    padding: 1.8rem;
+    background-color: #2D67D0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .nav__bar{
+    padding: 0.8rem;
+}
+.navbar .nav__bar a{
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: var(--ubuntu);
+    transition: all 0.5s linear;
+    text-decoration: none;
+}
+.navbar .nav__bar .fa-magnifying-glass{
+    color: #fff;
+    margin-left: 5px;
+    transition: all 0.5s linear;
+}
+.nav__bar .fa-magnifying-glass:hover{
+    color: aqua;
+}
+.nav__bar .fa-bars{
+    color: #51FE44;
+    position: fixed;
+    font-size: 2rem;
+    display: none;
+}
+.nav__bar a:hover{
+    color: aqua;
+}
+.black{
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+}
+.banner{
+    width: 100%;
+    padding: 4.8rem 0;
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.car__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    margin-top: 6rem;
+}
+.car__item h2{
+    font-family: var(--sanspro);
+    font-size: 6.5rem;
+    color: #51FE44;
+    margin-bottom: 1rem;
+}
+.car__item h3{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.car__item p{
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    font-family: var(--karla);
+    margin-bottom: 1rem;
+}
+.car__item button{
+    padding: 1rem 4rem;
+    margin-left: 10px;
+    font-family: var(--karla);
+    font-size: 1.2rem;
+    border: 0;
+    outline: 0;
+    transition: all 0.4s linear;
+}
+.car__item button:hover{
+    background-color: black;
+    color: #fff;
+}
+.auto{
+    width: 100%;
+    padding: 2.8rem 0;
+}
+.auto__content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: 3rem;
+}
+.auto__item{
+    width: 90%;
+    padding: 1.1rem 0;
+    background-color: #f7f2f2;
+    text-align: center;
+}
+.auto__item .img img{
+    width: 50%;
+    margin-left: 25%;
+}
+.auto__item h3{
+    font-family: var(--lato);
+    margin-bottom: 2rem;
+}
+.auto__item p{
+    margin-top: 2rem;
+    font-family: var(--karla);
+}
+.abaut{
+    width: 100%;
+    padding: 4.8rem 0;
+}
+.title{
+    text-align: center;
+}
+.title h2{
+    font-family: var(--ubuntu);
+    font-size: 3rem;
+    border-bottom: 0.4px solid #2D67D0;
+    display: inline-block;
+}
+.what{
+    width: 100%;
+    padding: 4.8rem 0;
+}
+.title p{
+    margin-top: 0.8rem;
+    font-family: var(--lato);
+    margin-bottom: 4rem;
+}
+.what__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.what__item{
+        cursor: pointer;
+}
+.what__img {
+    width: 80%;
+}
+.what__img{
+    position: relative;
+}
+.what__img .add__hover{
+    opacity: 0;  
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.what__img:hover .add__hover{
+    width: 100%;
+    height: 98%;
+    opacity: 1;
+    transition: all 0.8s linear;
+}
+.what__img .add__hover h2{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #51FE44;
+}
+.what__img .add__hover p{
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    color: #fff;
+}
+ .what button{
+    margin-top: 4rem;
+    margin-left: 38%;
+    padding: 1rem 3rem;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    color: #fff;
+    border-radius: 100px;
+    font-family: var(--karla);
+    transition: all 0.8s;
+}
+.what button:hover{
+    background-color: #51FE44;
+}
+.testtimonial{
+    width: 100%;
+    padding: 4.8rem 0;
+}
+.t_c{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid: 3rem;
+}
+.test__item .img img{
+    width: 50%;
+}
+.img__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.test__item{
+    width: 100%;
+    padding: 1rem;
+    background-color: #141629;
+}
+.test__item h2{
+    color: #fff;
+    font-family: var(--ubuntu);
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+.test__item p{
+    color: #fff;
+    font-family: var(--karla);
+    margin-top: 2rem;
+}
+.test__item span{
+    color:#fff;
+}
+.contact{
+    width: 100%;
+    padding: 4.8rem 0;
+    background-color: #141629;
+}
+.us{
+    display: flex;
+    justify-content: space-between;
+}
+.us {
+    color: #fff;
+}
+.us .fa-address-book{
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+.map__content{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 3rem;
+    width: 100%;
+    padding: 3.8rem 0;
+}
+.map__item input{
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #141629;
+    outline:0 ;
+    color: wheat;
+    font-family: var(--mono);
+    font-size: 1.3rem;
+    text-indent: 15px;
+}
+.map__item textarea{
+    margin-top: 2rem;
+    width: 100%;
+    height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #141629;
+    outline:0 ;
+    color: wheat;
+    font-family: var(--mono);
+    font-size: 1.3rem;
+    text-indent: 15px;
+}
+.send__content{ 
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15rem;
+    border-bottom: 1px solid #fff;
+}
+.send__item button{
+    padding: 1rem 3rem;
+    border: 0;
+    outline: 0;
+    font-family: var(--mono);
+    font-size: 1rem;
+    transition: all 0.8s linear;
+    margin-bottom: 4rem;
+}
+.send__item button:hover{
+    background-color: #51FE44;
+}
+.send__item input{
+    padding: 0.9rem;
+    border: 0;
+    outline: 0;
+    font-family: var(--mono);
+    font-size: 1rem;
+}
+.send__item i{
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.4s linear;
+    margin-left: 2px;
+}
+.send__item i:hover{
+    color: #51FE44;
+}
+.text{
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+.text h2{
+    color: #fff;
+}
